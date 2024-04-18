@@ -1,0 +1,22 @@
+.img-cont {
+  display: flex;
+}
+.img-cont img {
+  width: 50%;
+}
+
+.information {
+  padding: 2% 10%;
+}
+
+@media (max-width: 790px) {
+  .img-cont {
+    flex-direction: column;
+  }
+  .img-cont img {
+    width: 100%;
+  }
+  .img-cont img:nth-child(1) {
+    display: none;
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Покупка онлайн</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/onlineBuy.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <a class="nav-logo" href="main.html">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <div class="menu-bur">
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label for="burger-checkbox" class="burger"></label>
+          <ul class="menu-list">
+            <li><a href="basicCatalog.html" class="menu-item">Автомобили</a></li>
+            <li></li>
+            <li><a href="electroCatalog.html" class="menu-item">Электромобили</a></li>
+            <li></li>
+            <li><a href="onlineBuy.html" class="menu-item">Покупка онлайн</a></li>
+            <li></li>
+            <li><a href="aboutUs.html" class="menu-item">Больше об автосалоне</a></li>
+            <li></li>
+          </ul>
+        </div>
+        <ul class="menu-main">
+          <li><a href="basicCatalog.html">Автомобили</a></li>
+          <li><a href="electroCatalog.html">Электромобили</a></li>
+          <li><a href="onlineBuy.html">Покупка онлайн</a></li>
+          <li><a href="aboutUs.html">Больше об автосалоне</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="back-img">
+      <section class="back-container">
+        <h1>АВТОСАЛОН</h1>
+        <p>
+          Страсть к автомобилям. Индивидуальность. Качество. Удовлетворение
+          потребностей самых требовательных клиентов. Воплощаем вашу мечту.
+        </p>
+        <div class="container">
+          <div class="center">
+            <button class="btn">
+              <svg
+                width="180px"
+                height="60px"
+                viewBox="0 0 180 60"
+                class="border"
+              >
+                <polyline
+                  points="179,1 179,59 1,59 1,1 179,1"
+                  class="bg-line"
+                />
+                <polyline
+                  points="179,1 179,59 1,59 1,1 179,1"
+                  class="hl-line"
+                />
+              </svg>
+              <span>Подобрать авто</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="contact">
+      <h1 class="section-header">Оформление заявки</h1>
+      <div class="contact-wrapper">
+        <form id="contact-form" class="form-horizontal" role="form">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NAME"
+                name="name"
+                value=""
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="EMAIL"
+                name="email"
+                value=""
+                required
+              />
+            </div>
+          </div>
+          <textarea
+            class="form-control"
+            rows="10"
+            placeholder="MESSAGE"
+            name="message"
+            required
+          ></textarea>
+          <button
+            class="btn btn-primary send-button"
+            id="submit"
+            type="submit"
+            value="SEND"
+          >
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i
+              ><span class="send-text">SEND</span>
+            </div>
+          </button>
+        </form>
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fa fa-map-marker fa-2x"
+                ><span class="contact-text place">Минск</span></i
+              >
+            </li>
+            <li class="list-item">
+              <i class="fa fa-phone fa-2x"
+                ><span class="contact-text phone"
+                  ><a href="tel:1-212-555-5555" title="Give me a call"
+                    >(123) 456-7890</a
+                  ></span
+                ></i
+              >
+            </li>
+            <li class="list-item">
+              <i class="fa fa-envelope fa-2x"
+                ><span class="contact-text gmail"
+                  ><a href="mailto:#" title="Send me an email"
+                    >gmail@gmail.com</a
+                  ></span
+                ></i
+              >
+            </li>
+          </ul>
+          <hr />
+          <ul class="social-media-list">
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-tg" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-ints" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-gmail" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+          <hr />
+
+          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .querySelector("#contact-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          e.target.elements.name.value = "";
+          e.target.elements.email.value = "";
+          e.target.elements.message.value = "";
+        });
+    </script>
+  </body>
+</html>

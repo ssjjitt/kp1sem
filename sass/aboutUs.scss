@@ -1,0 +1,20 @@
+.img-cont{
+    display: flex;   
+    img{
+        width: 50%;
+    }
+}
+.information{
+    padding: 2% 10%;
+}
+@media (max-width: 790px) {
+    .img-cont{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+        img:nth-child(1){
+            display: none;
+        }
+    }
+}
